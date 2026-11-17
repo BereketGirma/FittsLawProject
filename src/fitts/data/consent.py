@@ -32,7 +32,9 @@ class ConsentStore:
         self.data_directory = Path(data_directory)
 
     def path_for(self, participant_id: str) -> Path:
-        return self.data_directory / participant_id / "consent.json"
+        if not participant_id or any(c not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_" for c in participant_id):
+            raise ValueError("invalid participant ID")
+        return self.data_directory / f"participant_{participant_id}" / "consent.json"
 
     def save(self, record: ConsentRecord) -> Path:
         if not record.consented:

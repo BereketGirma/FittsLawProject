@@ -32,13 +32,13 @@ class WelcomeScreen:
         x = (width - content_width) // 2
         title = self.fonts["title"].render("Fitts' Law Experiment", True, theme.TEXT)
         self.screen.blit(title, title.get_rect(center=(width // 2, max(90, height // 7))))
-        subtitle = self.fonts["heading"].render("Horizontal Mouse Movement Study", True, theme.PRIMARY_HOVER)
+        subtitle = self.fonts["heading"].render("Trackpad Pointing · Class Group Project", True, theme.PRIMARY_HOVER)
         self.screen.blit(subtitle, subtitle.get_rect(center=(width // 2, max(145, height // 7 + 58))))
         card = pygame.Rect(x, max(205, height // 3 - 25), content_width, 230)
         pygame.draw.rect(self.screen, theme.SURFACE, card, border_radius=16)
         y = draw_wrapped(
             self.screen,
-            "This study measures how target size and distance affect horizontal mouse pointing. You will practice before the formal experiment begins.",
+            "Help our group explore how target size and distance affect trackpad pointing. Allow about 15–20 minutes, including practice and short breaks. Participation is voluntary; no payment is provided.",
             self.fonts["body"], theme.TEXT, card.x + 40, card.y + 35, card.width - 80, 8,
         ) + 25
         info = self.fonts["body_bold"].render("320 total trials  •  160 left  •  160 right", True, theme.SUCCESS)

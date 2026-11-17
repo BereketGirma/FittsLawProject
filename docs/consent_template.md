@@ -1,35 +1,41 @@
-# Participant Consent Information
+﻿# Participation Information and Consent
 
-Consent version: draft-1
+Consent version: class-project-1
 
-## Purpose of the study
+## About this group project
 
-This study examines how target size and distance affect horizontal mouse movement. The results will be used to understand pointing performance using Fitts' Law.
+We are a student group studying how target size and distance affect pointing speed and accuracy using Fitts' Law. We will use the data from this activity to compare leftward and rightward trackpad movements and summarize the results for our group project.
 
-## Study procedures
+## What you will do and how long it takes
 
-You will complete a short practice followed by 320 pointing trials. Each trial begins at a box in the center of the screen. A target then appears to the left or right for you to click as quickly and accurately as possible. Breaks will be provided.
+You will answer a few questions about your age and computer use, read the instructions, and complete a short practice. You will then use the same computer and trackpad as the other participants to complete 320 pointing tasks in ten blocks of 32. For each task, click the center circle, then click the target on the left or right as quickly and accurately as you can. You can take a break between blocks.
 
-## Data being collected
+Please allow approximately 15-20 minutes for the full activity, including instructions, practice, and short breaks. This is an estimate; your pace and the length of your breaks may make it shorter or longer.
 
-The study may collect a pseudonymous participant code, trial settings, mouse positions, click locations, timing information, hits, and misses. Your name and other direct identifying information will not be requested.
+## Payment
 
-## Voluntary participation
+There is no payment or other compensation for taking part.
 
-Taking part is voluntary. You may decline or stop at any time without penalty. Choosing not to participate will not affect any services or benefits available to you.
+## What data we collect and why
 
-## Potential risks and discomfort
+We collect an optional age in years, a weekly computer-use category, the hand you use on the trackpad, and an optional dominant hand. You may leave age blank and choose Prefer not to answer where offered. These answers help us describe the participants and explore how computer experience and hand use relate to pointing performance.
 
-Risks are expected to be minimal. You may experience temporary hand, wrist, eye, or attention fatigue. Take the provided breaks and stop if you feel discomfort.
+During the recorded tasks, we save target sizes and distances, cursor positions, click positions, timing, successful selections, and missed clicks. These data let us measure movement time, recorded cursor path length, and pointing errors. Practice movements are not saved. Tracking takes place only inside this application while a recorded task is active.
 
-## Privacy and data storage
+We do not ask for your name, email address, or date of birth. We do not collect machine specifications, device identifiers, or network addresses. We record that this activity uses a trackpad and save the task window dimensions to interpret the target coordinates.
 
-Study records are stored under a randomly generated participant code. Data will be stored on the research computer and should be handled according to the research team's approved data-management procedures.
+## Your choice to take part
 
-## Withdrawal information
+Taking part is voluntary. You may decline before starting or stop at any time, without penalty or giving a reason. Press Escape to stop, or close the application. Switching away during the recorded tasks also ends the session as incomplete. You do not need to finish all the tasks if you wish to stop.
 
-You may withdraw before or during the activity by selecting Decline, pressing Escape, or closing the application. Ask the research team whether already-collected de-identified data can be removed after the session.
+## Comfort and breaks
 
-## Researcher contact information
+Repeated trackpad use may cause temporary hand, wrist, eye, or attention fatigue. Take breaks when needed, and stop if you feel uncomfortable.
 
-This text is a draft template. Before data collection, replace this section with institution-approved researcher, supervisor, and research-ethics contact information.
+## How the data are used and stored
+
+Your responses and task records are saved locally under a randomly generated participant code. The project group will use the records for project analysis and reporting, with results summarized without names. Stopping the activity does not automatically delete data already saved. If you would like to ask about removing your saved records, tell the person running the activity and provide your participant code.
+
+## Questions and agreement
+
+Please ask the group member running this activity if anything is unclear before you continue. By selecting the agreement checkbox and choosing I Agree / Continue, you confirm that you have read this information and voluntarily agree to participate.

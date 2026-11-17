@@ -1,4 +1,4 @@
--e git+https://github.com/BereketGirma/FittsLawProject.git@22886b30cbd5b28e25f04d99a6f3f6181cac633e#egg=fittslawproject
+-e .[dev,analysis]
 iniconfig==2.3.1
 packaging==26.3
 pluggy==1.7.0

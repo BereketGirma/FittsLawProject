@@ -7,14 +7,14 @@ from fitts.ui.components import Button, draw_footer
 
 
 STEPS = (
-    "Start each trial by clicking the box in the center of the screen.",
+    "Start each trial by clicking the green center circle.",
     "A target will appear either to the left or right.",
-    "Move your mouse horizontally toward the target.",
+    "Use the trackpad to move the cursor toward the target.",
     "Click the target as quickly and accurately as possible.",
     "Return to the center to begin the next trial.",
     "Target sizes and distances will change.",
     "The experiment contains 320 trials: 160 left and 160 right.",
-    "Breaks will be provided throughout the activity.",
+    "A break is offered after each block of 32 trials.",
     "You may stop participation at any time.",
 )
 
@@ -48,7 +48,7 @@ class InstructionsScreen:
         cy = diagram.centery
         pygame.draw.line(self.screen, theme.BORDER, (diagram.x + 40, cy), (diagram.right - 40, cy), 3)
         for cx, color in ((diagram.x + 50, theme.PRIMARY), (diagram.centerx, theme.SUCCESS), (diagram.right - 50, theme.PRIMARY)):
-            pygame.draw.rect(self.screen, color, pygame.Rect(cx - 18, cy - 28, 36, 56), border_radius=5)
+            pygame.draw.circle(self.screen, color, (cx, cy), 18)
         center_label = self.fonts["small"].render("left target       start       right target", True, theme.MUTED)
         self.screen.blit(center_label, center_label.get_rect(center=(diagram.centerx, diagram.bottom - 18)))
 

@@ -95,6 +95,18 @@ def load_config(path: str | Path) -> ExperimentConfig:
     target_height = _positive_int(data, "target_height")
     widths = _positive_int_tuple(data, "target_widths")
     distances = _positive_int_tuple(data, "target_distances")
+    if len(set(widths)) != len(widths) or len(set(distances)) != len(distances):
+        raise ConfigurationError("target widths and distances must be unique")
+    if max(widths) > height or any(w % 2 for w in widths):
+        raise ConfigurationError("circle diameters must be even and fit the window height")
+    if min(distances) <= 30 + max(widths) / 2:
+        raise ConfigurationError("destination circles must not overlap the center start circle")
+    if isinstance(data["random_seed"], bool) or not isinstance(data["random_seed"], int):
+        raise ConfigurationError("random_seed must be an integer")
+    if not all(data[k] for k in ("require_center_click", "record_mouse_movement", "record_missed_clicks")):
+        raise ConfigurationError("official experiments require center clicks, mouse tracking and missed clicks")
+    if save_format != "csv":
+        raise ConfigurationError("save_format must be csv")
     if target_height > height:
         raise ConfigurationError("target height exceeds the window height")
     half_window = width / 2

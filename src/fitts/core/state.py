@@ -8,6 +8,7 @@ from enum import Enum, auto
 class AppState(Enum):
     WELCOME = auto()
     CONSENT = auto()
+    DEMOGRAPHICS = auto()
     INSTRUCTIONS = auto()
     PRACTICE = auto()
     EXPERIMENT = auto()
@@ -18,8 +19,9 @@ class AppState(Enum):
 
 ALLOWED_TRANSITIONS = {
     AppState.WELCOME: {AppState.CONSENT, AppState.ABORTED},
-    AppState.CONSENT: {AppState.WELCOME, AppState.INSTRUCTIONS, AppState.ABORTED},
-    AppState.INSTRUCTIONS: {AppState.CONSENT, AppState.PRACTICE, AppState.ABORTED},
+    AppState.CONSENT: {AppState.WELCOME, AppState.DEMOGRAPHICS, AppState.ABORTED},
+    AppState.DEMOGRAPHICS: {AppState.CONSENT, AppState.INSTRUCTIONS, AppState.ABORTED},
+    AppState.INSTRUCTIONS: {AppState.DEMOGRAPHICS, AppState.PRACTICE, AppState.ABORTED},
     AppState.PRACTICE: {AppState.INSTRUCTIONS, AppState.EXPERIMENT, AppState.ABORTED},
     AppState.EXPERIMENT: {AppState.BREAK, AppState.COMPLETE, AppState.ABORTED},
     AppState.BREAK: {AppState.EXPERIMENT, AppState.ABORTED},

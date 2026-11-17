@@ -11,7 +11,7 @@ from fitts.ui.components import Button, draw_footer, wrap_text
 class ConsentScreen:
     def __init__(self, screen: pygame.Surface, app_fonts: dict[str, pygame.font.Font], participant_id: str, document_path: str | Path) -> None:
         self.screen, self.fonts, self.participant_id = screen, app_fonts, participant_id
-        self.document = Path(document_path).read_text(encoding="utf-8")
+        self.document = Path(document_path).read_text(encoding="utf-8-sig")
         self.checked = False
         self.scroll_offset = 0
         self.max_scroll = 0
